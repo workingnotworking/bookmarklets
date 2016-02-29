@@ -1,0 +1,51 @@
+#! /usr/bin/env ruby
+
+require 'bundler'
+require 'erb'
+Bundler.require
+
+ROOT = File.dirname(File.expand_path(__FILE__))
+
+class Renderer; end
+
+puts "Compiling..."
+
+bookmarklets = []
+
+paths = Dir[File.join(ROOT, 'javascripts', '*')]
+paths.each do |path|
+  print "  Minifying code in #{path}..."
+  file = File.read(path)
+  lines = file.split("\n")
+  minified = Uglifier.new.compile(file).gsub(/'/, "\\\\'").gsub('"', "'")
+
+  bookmarklets << {
+    :title => lines[0][3..-1],
+    :name => lines[1][3..-1],
+    :script => Uglifier.new.compile(file).gsub(/'/, "\\\\'").gsub('"', "'")
+  }
+
+  percentage_size = (minified.length.to_f / file.length.to_f * 100.0 * 100).to_i / 100.0
+  puts " #{file.length} bytes -> #{minified.length} bytes, #{percentage_size}%"
+end
+
+html = bookmarklets.collect do |mark|
+<<-HTML
+  <h2>#{mark[:title]}</h2>
+  <a href="javascript:#{mark[:script]}">#{mark[:name]}</a>
+HTML
+end.join("\n")
+
+content = File.read(File.join(ROOT, 'index.html.erb'))
+
+# Weird hoops to be able to use `yield` in the ERB template:
+# http://hostiledeveloper.com/2015/05/28/working-with-templates-in-ruby-erb.html
+erb = ERB.new(content)
+erb.def_method(Renderer, 'render')
+result = Renderer.new.render do
+  html
+end
+
+File.write(File.join(ROOT, 'public', 'index.html'), result )
+
+puts "Done."

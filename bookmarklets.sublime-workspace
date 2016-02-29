@@ -1,0 +1,1241 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"action_count",
+				"action_count_increment"
+			],
+			[
+				"applicant_",
+				"applicant_referrer_summary"
+			],
+			[
+				"mailing_",
+				"mailing_essentials"
+			],
+			[
+				"mail",
+				"mailing_weekly"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"chzn",
+				"chzn-container"
+			],
+			[
+				"pass",
+				"password_confirmation"
+			],
+			[
+				"sans",
+				"sans-cond"
+			],
+			[
+				"is-",
+				"is-parttime"
+			],
+			[
+				"get",
+				"getPreviousMessage"
+			],
+			[
+				"show",
+				"showFulltimeNotice"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "// Turn Twitter links in Intercom.io into actual links\n(function() {\n  var els = document.getElementsByTagName('td')\n  for (var i=0; i<els.length; i++) {\n    if (els[i].nodeType == 1) {\n      var el = els[i];\n      if (el.childNodes[2]) {\n        var n = el.childNodes[2];\n        if (n.nodeType == 1) {\n          if (n.getAttribute('data-lookup-key') == 'custom_data.twitter') {\n            var h = n.innerHTML.trim();\n            if (h != 'Unknown') {\n              n.innerHTML = '<a href=\\'https://twitter.com/' + h + '\\' target=\\'_blank\\'>' + h + '</a>';\n            }\n          } else if (n.getAttribute('data-lookup-key') == 'custom_data.instagram') {\n            var h = n.innerHTML.trim();\n            if (h != 'Unknown') {\n              n.innerHTML = '<a href=\\'https://instagram.com/' + h + '\\' target=\\'_blank\\'>' + h + '</a>';\n            }\n          }\n        }\n      }\n    }\n  }\n}())\n\n// Uglifier.new.compile(File.read('/Users/rob/Sites/workingnotworking/bookmarklets/assets/original.js')).gsub('\"', \"'\")\n\n(function(){for(var els=document.getElementsByTagName('td'),i=0;i<els.length;i++)if(1==els[i].nodeType){var el=els[i];if(el.childNodes[2]){var n=el.childNodes[2];if(1==n.nodeType)if('custom_data.twitter'==n.getAttribute('data-lookup-key')){var h=n.innerHTML.trim();'Unknown'!=h&&(n.innerHTML='<a href=\\'https://twitter.com/'+h+'\\' target=\\'_blank\\'>'+h+'</a>')}else if('custom_data.instagram'==n.getAttribute('data-lookup-key')){var h=n.innerHTML.trim();'Unknown'!=h&&(n.innerHTML='<a href=\\'https://instagram.com/'+h+'\\' target=\\'_blank\\'>'+h+'</a>')}}}}())\n",
+			"file": "assets/original.js",
+			"file_size": 1781,
+			"file_write_time": 131012549180000000,
+			"settings":
+			{
+				"buffer_size": 1579,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1863,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wrap",
+				"Word Wrap: Toggle"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"mini",
+				"View: Toggle Minimap"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"move",
+				"File: Move"
+			],
+			[
+				"latest",
+				"Rails Latest Migration: Open latest Rails migration"
+			],
+			[
+				"markd",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"mig",
+				"Migrations list"
+			],
+			[
+				"ruby",
+				"Set Syntax: Ruby"
+			],
+			[
+				"text",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"sq",
+				"Set Syntax: SQL"
+			],
+			[
+				"late",
+				"Rails Latest Migration: Open latest Rails migration"
+			],
+			[
+				"package",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"packagere",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"resource",
+				"PackageResourceViewer: Open Resource"
+			],
+			[
+				"delete",
+				"File: Delete"
+			],
+			[
+				"rails",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"preview",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"TODO",
+				"Snippet: text-decoration:overline"
+			],
+			[
+				"rena",
+				"File: Rename"
+			],
+			[
+				"dup",
+				"File: Duplicate"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"coffeee",
+				"Set Syntax: CoffeeScript (Literate)"
+			],
+			[
+				"markdown",
+				"Markdown Preview: Preview in Browser"
+			]
+		],
+		"width": 475.0
+	},
+	"console":
+	{
+		"height": 293.0,
+		"history":
+		[
+			"clear",
+			"ckear",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/rob/Sites/workingnotworking/bookmarklets",
+		"/Users/rob/Sites/workingnotworking/bookmarklets/assets"
+	],
+	"file_history":
+	[
+		"/Users/rob/Sites/workingnotworking/workingnotworking/Gemfile.lock",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/application_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/public/home/index.html",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/index_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/deploy.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/.ruby-version",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/.gitignore",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/booking.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/.env",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/deploy/staging.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/booking_requests/state_change_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/routes.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/Gemfile",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/user/plan_status_calculator.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/user/search.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/db/seeds.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/helpers/messages_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/test/test_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/layouts/application.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/booking_requests/create_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/test/unit/booking_test.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/location_parser.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/mailchimp.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/user/for_message.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/user/for_booking_request.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/bookings/update_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/bookings/update_from_job_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/bookings/name_generator_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/services/booking_requests/update_service.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/bookings/index.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/index.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/_inbox.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/styles.css.scss",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/global.css.scss",
+		"/Users/rob/Library/Mobile Documents/com~apple~CloudDocs/Shared Preferences/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/bookings/index.css.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/presenters/inbox_presenter.rb",
+		"/Users/rob/Library/Mobile Documents/com~apple~CloudDocs/Shared Preferences/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/messages_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/message.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/booking_request.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/workingnotworking.sublime-project",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/workingnotworking.sublime-workspace",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/.env.production",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/_message_thread.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/show.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/app.message.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/_new_message.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/_message_user.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/helpers/mail_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/new.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/test/unit/helpers/messages_helper_test.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/mailers/notifier.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/mailers/message_mailer.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/mailers/booking_request_mailer.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/jobs/record_search_event_job.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/index/human.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/search_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/admin/team_members.rb",
+		"/Users/rob/Library/Mobile Documents/com~apple~CloudDocs/Shared Preferences/Sublime Text 3/Packages/Color Highlighter/ColorHighlighter.sublime-settings",
+		"/Users/rob/Library/Mobile Documents/com~apple~CloudDocs/Shared Preferences/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/human_contact.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/admin/jobs.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/admin/humans.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/index/team.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/admin/creatives.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/admin/nominations.rb",
+		"/Users/rob/Library/Mobile Documents/com~apple~CloudDocs/Shared Preferences/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/tmp/subl stdin aIvDue.txt",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/db/migrate/20160226002137_add_cost_and_brief_to_human_contact.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/index/human-terms.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/index/human_terms.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/jobs/intercom_event_job.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/jobs/intercom_sync_job.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/initializers/intercom.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/jobs_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/inbox/_summary_layout.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/messages/inbox/_booking_request_summary.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/shared/_user_js_vars.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/helpers/application_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/search.js.coffee",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/search/index.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/jobs/index.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/jobs/_jobs.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/jobs/_job_post.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/users/show.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/shared/_user.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/search/_results.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/search/_grid_result.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/users/_portfolio_item_content.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/users/_portfolio_item.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/scripts.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/shared/_browse_work.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/helpers/cache_key_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/app.search.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/uploaders/avatar_uploader.rb",
+		"/Users/rob/.bash_profile",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/uploaders/perk_uploader.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/uploaders/team_member_uploader.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/app.new_booking.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/users_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/email/global.css.scss",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/mailers/mail_preview.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/dashboard/_email_list_modal.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/controllers/bookings_controller.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/shared_mailer/_user.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/deploy/production.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/jobs/show.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/dashboard/index.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/notifier/send_list.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/dashboard/show_list_modal.css.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/app.email_list.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/bookings/new.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/bookings/booking_message.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/bookings/edit.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/helpers/users_helper.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/models/message_thread.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/javascripts/application/app.utility.last_contact.js",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/index/human-shared.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/config/initializers/time_formats.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/test/unit/booking_request_test.rb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/messages/modal.css.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/messages/shared.css.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/shared/_user_contact_options.html.erb",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/views/index/human.html.erb",
+		"/Users/rob/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/app/assets/stylesheets/shared/booking_modals.css.sass",
+		"/Users/rob/Sites/workingnotworking/workingnotworking/test/fixtures/booking_requests.yml"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"sass-rails",
+			"sass",
+			" :",
+			"should have one note",
+			"'\n",
+			"StateChangeService",
+			"ForMessage",
+			"for_message",
+			"for_mesage",
+			"ForIntercom",
+			"for_intercom",
+			"booking_details",
+			"gem",
+			"message_sender_link",
+			"default",
+			"class",
+			"unadmin",
+			"#",
+			"attribute",
+			"page",
+			"+v",
+			"+y",
+			"+v",
+			"phase_1",
+			"phase",
+			"scope",
+			"  scope :phase_1, -> { where(:phase => 1) }",
+			"scope",
+			"location",
+			"availability",
+			"formatted_location",
+			"titles",
+			"rate",
+			"column",
+			"skill",
+			"IntercomEvent",
+			"markdown",
+			"5em",
+			"’",
+			"data-intercom",
+			"data_url_for_message",
+			"render_threads",
+			"intercom",
+			"def intercom_script_tag",
+			"intercom_script_tag",
+			"intercom_script_Tag",
+			"timer",
+			"timeout",
+			"shared_user_cache_key",
+			"shared/user",
+			":user => user.username",
+			"intercom-event",
+			"js-ga-event",
+			"intercom-event",
+			"js_intercom_event",
+			"trackEvent",
+			"js-ga-event",
+			".intercom-event",
+			"intercom-event",
+			"send-message",
+			"demand",
+			"v5",
+			"guard",
+			"listen",
+			"celluloid",
+			"nio4r",
+			"shared_user_cache_key",
+			".contact-me",
+			"send message",
+			"invited_by",
+			"profileActions",
+			".follow",
+			"signed-out",
+			"html_",
+			"Z",
+			"class",
+			"@",
+			"tipsy",
+			"between",
+			"Time",
+			"mixin",
+			"404",
+			"end",
+			"last-message",
+			".request-book",
+			"def hire_button_label",
+			"step 1 of 3",
+			"Back to admin",
+			"maked",
+			"time",
+			"looking for",
+			"onboarding",
+			"masked_admin?",
+			"@empty",
+			"activeadmin",
+			"# encoding: UTF-8\n\n# ActiveAdmin.register_page \"Dashboard\" do\n\n#   menu :priority => 1, :label => proc{ I18n.t(\"active_admin.dashboard\") }\n\n#   action_item do\n#     link_to \"Enable Invites\", \"/admin/dashboard/enable_invites\", :method => :post, :confirm => \"Are you sure?\" if !invites_enabled?\n#   end\n#   action_item do\n#     link_to \"Disable Invites\", \"/admin/dashboard/disable_invites\", :method => :post, :confirm => \"Are you sure?\" if invites_enabled?\n#   end\n\n#   page_action :enable_invites, :method => :post do\n#     invites_toggle(true)\n#     redirect_to admin_dashboard_path, :notice => \"Invites enabled.\"\n#   end\n\n#   page_action :disable_invites, :method => :post do\n#     invites_toggle(false)\n#     redirect_to admin_dashboard_path, :notice => \"Invites disabled.\"\n#   end\n\n#   content :title => proc{ I18n.t(\"active_admin.dashboard\") } do\n\n#     columns do\n#       column do\n#         panel 'Active Creatives/Managers' do\n#           h1 \"#{number_with_delimiter(User.freelancers.active.count)} / #{number_with_delimiter(User.managers.active.count)}\"\n#         end\n#       end\n\n#       column do\n#         panel 'Open Nominations/Applications' do\n#           h1 \"#{number_with_delimiter(Nominee.stage_one.count)} / #{number_with_delimiter(Applicant.unapproved.count)}\"\n#         end\n#       end\n\n#       column do\n#         panel 'Bookings Open/Closed' do\n#           h1 \"#{number_with_delimiter(Booking.active.count)} / #{number_with_delimiter(Booking.closed.count)}\"\n#         end\n#       end\n\n#       column do\n#         panel 'Manager Booking/UJB Booking' do\n#           h1 \"#{number_with_delimiter(Booking.non_job.count)} / #{number_with_delimiter(Booking.job.count)}\"\n#         end\n#       end\n#     end\n\n#     columns do\n#       column do\n#         panel \"Average Message Read Time\" do\n#           if ActiveRecord::Base.connection.instance_values['config'][:adapter] == 'sqlite3'\n#             h1 '3.12 <span>days</span>'.html_safe\n#           else\n#             h1 (Message.find_by_sql(\"select avg(datediff(read_at, created_at)) as days from messages where source != 'welcome' having days is not null\").first.days.round(2).to_s + ' <span>days</span>').html_safe\n#           end\n#         end\n#       end\n\n#       column do\n#         panel \"Total Messages Sent\" do\n#           h1 number_with_delimiter(Message.where(Message.arel_table[:source].not_eq('welcome')).count)\n#         end\n#       end\n\n#       column do\n#         panel \"Total Open Jobs\" do\n#           h1 number_with_delimiter(Job.active.count)\n#         end\n#       end\n\n#       column do\n#         panel 'Creatives Hired/Declined' do\n#           h1 \"#{number_with_delimiter(BookingRequest.approved.count)} / #{number_with_delimiter(BookingRequest.declined.count)}\"\n#         end\n#       end\n#     end\n\n\n#     columns do\n#       column do\n#         panel \"Recent Creatives\" do\n#           table_for User.recent(FREELANCER, 10) do\n#             column :name do |user| link_to(user.name, admin_creative_path(user)) end\n#             column :username do |user| link_to(user.username, user.profile, :target => '_blank') end\n#             column :title do |user| user.titles.first.name if user.titles.size > 0 end\n#             column :available, :sortable => 'users.availability' do |user|\n#               status_tag(user.available.split(' ').last) if user.available\n#             end\n#             column :created_at\n#           end\n#         end\n\n#         panel \"Recent Double Logins\" do\n#           table_for DoubleLogin.order('created_at desc').limit(10) do |login|\n#             column :name do |login|\n#               if login.user.freelancer?\n#                 link_to(login.user.name, admin_creative_path(login.user))\n#               else\n#                 link_to(login.user.name, admin_manager_path(login.user))\n#               end\n#             end\n#             column :email do |login|\n#               if login.user.freelancer?\n#                 link_to(login.user.email, admin_creative_path(login.user))\n#               else\n#                 link_to(login.user.email, admin_manager_path(login.user))\n#               end\n#             end\n#             column :ip do |login|\n#               link_to(login.ip, \"http://addgadgets.com/ipaddress/index.php?ipaddr=#{login.ip}\", :target => '_blank')\n#             end\n#             column :user_agent do |login|\n#               %Q{<span title=\"#{login.user_agent}\" style=\"cursor: help\">#{login.user_agent}</span>}.html_safe\n#             end\n#             column :created_at do |login|\n#               time_ago_in_words(login.created_at) + ' ago'\n#             end\n#           end\n#           div do\n#             strong do\n#               link_to 'All Double Logins →', admin_double_logins_path\n#             end\n#           end\n#         end\n#       end\n\n#       column do\n#         panel \"Recent Managers\" do\n#           table_for User.recent(MANAGER, 10) do\n#             column :name do |user| link_to(user.name, admin_manager_path(user.id)) end\n#             column :email, :sortable => 'users.email' do |user|\n#               link_to user.email, \"mailto:#{user.email}\" if user.email\n#             end\n#             column :company\n#             column :plan do |user|\n#               status_tag(user.plan.sub('all_','')) unless user.plan.blank?\n#             end\n#             column :created_at\n#           end\n#         end\n\n#         panel \"Most Double Logins\" do\n#           table_for User.select('users.*, count(*) as total').joins(:double_logins).group('user_id').order('total desc').limit(10) do |user|\n#             column :name do |user|\n#               if user.freelancer?\n#                 link_to(user.name, admin_creative_path(user))\n#               else\n#                 link_to(user.name, admin_manager_path(user))\n#               end\n#             end\n#             column :email do |user|\n#               if user.freelancer?\n#                 link_to(user.email, admin_creative_path(user))\n#               else\n#                 link_to(user.email, admin_manager_path(user))\n#               end\n#             end\n#             column :total do |user|\n#               user.double_logins.count\n#             end\n#           end\n#           div do\n#             strong do\n#               link_to 'All Double Logins →', admin_double_logins_path\n#             end\n#           end\n#         end\n#       end\n#     end\n#   end\n# end\n",
+			"true",
+			"AdminConstraint",
+			"@users",
+			"abcdefghww",
+			"*= ",
+			"def availability_update",
+			"availability_update",
+			"SOON",
+			"available_soon",
+			"geocodee",
+			"set_location",
+			"availability",
+			"normalize_location",
+			"submit",
+			"premailer",
+			"ajax:",
+			"list",
+			".email-list",
+			"list",
+			"email this list",
+			"list",
+			"def body_class",
+			"$('body')",
+			"portfolio",
+			".signup",
+			".job-photos",
+			"photo",
+			"portfolio_item_path",
+			"feature_portfolio",
+			"portfolio_item_path",
+			"name",
+			"approve"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"'",
+			"$body",
+			"\",\\n",
+			"'",
+			"",
+			"count",
+			"",
+			"400",
+			"location_bounds",
+			"availability",
+			"industries",
+			"skills_type",
+			"skills",
+			"titles",
+			"scope",
+			"scope.",
+			"@scope =",
+			"@scope",
+			"",
+			"'shared_mailer/user_header",
+			"shared_mailer/user_header",
+			"user",
+			"Booking::Extensions::NameGenerator",
+			"Messages::CreateService",
+			"BookingRequests::CreateService",
+			"BookingRequests::StateChangeService",
+			"BookingRequests::UpdateService",
+			"Bookings::UpdateFromJobService",
+			"Bookings::UpdateService",
+			"Messages::InboundService",
+			"BookingRequest::Creator",
+			"",
+			"Notifier.delay.\\1(\\2)",
+			"",
+			":apple_job",
+			"joe_to_jane",
+			"App.Message",
+			"users"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "assets/original.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1579,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1578,
+								1020
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": false,
+							"WordCountSyntax": "javascript",
+							"color_scheme": "Packages/User/Color Highlighter/themes/AfterGlow-Twilight.tmTheme",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1863,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1180,
+								1180
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "html",
+							"color_scheme": "Packages/User/Color Highlighter/themes/AfterGlow-Twilight.tmTheme",
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 305.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Elixir/elixir.sublime-build",
+	"project": "bookmarklets.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ream",
+				"README.md"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"applicants",
+				"app/admin/applicants.rb"
+			],
+			[
+				"nomin",
+				"app/admin/nominations.rb"
+			],
+			[
+				"gemfile.lock",
+				"Gemfile.lock"
+			],
+			[
+				".env",
+				".env"
+			],
+			[
+				"staging",
+				"config/deploy/staging.rb"
+			],
+			[
+				"deploy.rb",
+				"config/deploy.rb"
+			],
+			[
+				"ruby-v",
+				".ruby-version"
+			],
+			[
+				"gitig",
+				".gitignore"
+			],
+			[
+				"booking.rb",
+				"app/models/booking.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"index_con",
+				"app/controllers/index_controller.rb"
+			],
+			[
+				"applicaton_con",
+				"app/controllers/application_controller.rb"
+			],
+			[
+				"index.html",
+				"public/home/index.html"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"application.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"state_service",
+				"app/services/booking_requests/state_change_service.rb"
+			],
+			[
+				"inbox_pre",
+				"app/presenters/inbox_presenter.rb"
+			],
+			[
+				"message/inbox",
+				"app/views/messages/_inbox.html.erb"
+			],
+			[
+				"message/index",
+				"app/views/messages/index.html.erb"
+			],
+			[
+				"bookings/index",
+				"app/assets/stylesheets/bookings/index.css.sass"
+			],
+			[
+				"bookign_request.rb",
+				"app/models/booking_request.rb"
+			],
+			[
+				"message.rb",
+				"app/models/message.rb"
+			],
+			[
+				"message_con",
+				"app/controllers/messages_controller.rb"
+			],
+			[
+				"global",
+				"app/assets/stylesheets/global.css.scss"
+			],
+			[
+				"styles.css",
+				"app/assets/stylesheets/styles.css.scss"
+			],
+			[
+				"env.prod",
+				".env.production"
+			],
+			[
+				"",
+				"Gemfile"
+			],
+			[
+				"booking/index",
+				"app/views/bookings/index.html.erb"
+			],
+			[
+				"message_user",
+				"app/views/messages/_message_user.html.erb"
+			],
+			[
+				"message.js",
+				"app/assets/javascripts/application/app.message.js"
+			],
+			[
+				"new_message",
+				"app/views/messages/_new_message.html.erb"
+			],
+			[
+				"messages/new",
+				"app/views/messages/new.html.erb"
+			],
+			[
+				"messages_con",
+				"app/controllers/messages_controller.rb"
+			],
+			[
+				"mail_helper",
+				"app/helpers/mail_helper.rb"
+			],
+			[
+				"message_thread",
+				"app/views/messages/_message_thread.html.erb"
+			],
+			[
+				"messages/show.html",
+				"app/views/messages/show.html.erb"
+			],
+			[
+				"notifier",
+				"app/mailers/notifier.rb"
+			],
+			[
+				"message_mailer",
+				"app/mailers/message_mailer.rb"
+			],
+			[
+				"booking_requets_mailer",
+				"app/mailers/booking_request_mailer.rb"
+			],
+			[
+				"sass",
+				"app/assets/stylesheets/index/team.sass"
+			],
+			[
+				"appli.html",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"nom",
+				"app/admin/nominations.rb"
+			],
+			[
+				"jobs",
+				"app/admin/jobs.rb"
+			],
+			[
+				"team",
+				"app/admin/team_members.rb"
+			],
+			[
+				"booking_test",
+				"test/unit/booking_test.rb"
+			],
+			[
+				"intercom_event",
+				"app/jobs/intercom_event_job.rb"
+			],
+			[
+				"creatives.rb",
+				"app/admin/creatives.rb"
+			],
+			[
+				"human_contact",
+				"app/models/human_contact.rb"
+			],
+			[
+				"routes.rb",
+				"config/routes.rb"
+			],
+			[
+				"humans.rb",
+				"app/admin/humans.rb"
+			],
+			[
+				"human_contact.rb",
+				"app/models/human_contact.rb"
+			],
+			[
+				"human-terms",
+				"app/assets/stylesheets/index/human-terms.sass"
+			],
+			[
+				"uman_terms",
+				"app/views/index/human_terms.html.erb"
+			],
+			[
+				"job_post",
+				"app/views/jobs/_job_post.html.erb"
+			],
+			[
+				"summary",
+				"app/views/messages/inbox/_summary_layout.html.erb"
+			],
+			[
+				"booking_summary",
+				"app/views/messages/inbox/_booking_request_summary.html.erb"
+			],
+			[
+				"inbox",
+				"app/views/messages/_inbox.html.erb"
+			],
+			[
+				"inbox_presenter",
+				"app/presenters/inbox_presenter.rb"
+			],
+			[
+				"mes_help_test",
+				"test/unit/helpers/messages_helper_test.rb"
+			],
+			[
+				"message_helper",
+				"app/helpers/messages_helper.rb"
+			],
+			[
+				"jobs_con",
+				"app/controllers/jobs_controller.rb"
+			],
+			[
+				"user_js_",
+				"app/views/shared/_user_js_vars.html.erb"
+			],
+			[
+				"intercom.rb",
+				"config/initializers/intercom.rb"
+			],
+			[
+				"application_helper",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"intercom",
+				"app/jobs/intercom_sync_job.rb"
+			],
+			[
+				"search.js.coffee",
+				"app/assets/javascripts/search.js.coffee"
+			],
+			[
+				"location_parser",
+				"app/services/location_parser.rb"
+			],
+			[
+				"user/search",
+				"app/models/user/search.rb"
+			],
+			[
+				"intercom_sync_job",
+				"app/jobs/intercom_sync_job.rb"
+			],
+			[
+				"search_con",
+				"app/controllers/search_controller.rb"
+			],
+			[
+				"search/index",
+				"app/views/search/index.html.erb"
+			],
+			[
+				"jobs.html",
+				"app/views/jobs/_jobs.html.erb"
+			],
+			[
+				"jobs/index",
+				"app/views/jobs/index.html.erb"
+			],
+			[
+				"results",
+				"app/views/search/_results.html.erb"
+			],
+			[
+				"shared/user",
+				"app/views/shared/_user.html.erb"
+			],
+			[
+				"grid_result",
+				"app/views/search/_grid_result.html.erb"
+			],
+			[
+				"portfolio_item_content",
+				"app/views/users/_portfolio_item_content.html.erb"
+			],
+			[
+				"portfolio_item.html",
+				"app/views/users/_portfolio_item.html.erb"
+			],
+			[
+				"users/show.html",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"human-terms.sass",
+				"app/assets/stylesheets/index/human-terms.sass"
+			],
+			[
+				"human_term",
+				"app/views/index/human_terms.html.erb"
+			],
+			[
+				"_uploader",
+				"app/uploaders/avatar_uploader.rb"
+			],
+			[
+				"_upload",
+				"app/uploaders/perk_uploader.rb"
+			],
+			[
+				"search.js",
+				"app/assets/javascripts/application/app.search.js"
+			],
+			[
+				"deploy/produ",
+				"config/deploy/production.rb"
+			],
+			[
+				"users/show",
+				"app/views/users/show.html.erb"
+			],
+			[
+				"show",
+				"app/views/jobs/show.html.erb"
+			],
+			[
+				"users_con",
+				"app/controllers/users_controller.rb"
+			],
+			[
+				"email/global",
+				"app/assets/stylesheets/email/global.css.scss"
+			],
+			[
+				"mail_pre",
+				"app/mailers/mail_preview.rb"
+			],
+			[
+				"notifier.rb",
+				"app/mailers/notifier.rb"
+			],
+			[
+				"email_list",
+				"app/views/dashboard/_email_list_modal.html.erb"
+			],
+			[
+				"scripts.js",
+				"app/assets/javascripts/application/scripts.js"
+			],
+			[
+				"shared_mailer/user",
+				"app/views/shared_mailer/_user.html.erb"
+			],
+			[
+				"send_list",
+				"app/views/notifier/send_list.html.erb"
+			],
+			[
+				"bookin/index",
+				"app/views/bookings/index.html.erb"
+			],
+			[
+				"new_booking",
+				"app/assets/javascripts/application/app.new_booking.js"
+			],
+			[
+				"booking_con",
+				"app/controllers/bookings_controller.rb"
+			],
+			[
+				"email_list_modal",
+				"app/views/dashboard/_email_list_modal.html.erb"
+			],
+			[
+				"dashboard/idnex.html",
+				"app/views/dashboard/index.html.erb"
+			],
+			[
+				"show_list_",
+				"app/assets/stylesheets/dashboard/show_list_modal.css.sass"
+			],
+			[
+				"message/share",
+				"app/assets/stylesheets/messages/shared.css.sass"
+			],
+			[
+				"bookings_con",
+				"app/controllers/bookings_controller.rb"
+			],
+			[
+				"shared/user_contact_options",
+				"app/views/shared/_user_contact_options.html.erb"
+			],
+			[
+				"modal.css",
+				"app/assets/stylesheets/messages/modal.css.sass"
+			],
+			[
+				"last_contact",
+				"app/assets/javascripts/application/app.utility.last_contact.js"
+			],
+			[
+				"human.sass",
+				"app/assets/stylesheets/index/human.sass"
+			],
+			[
+				"human.html",
+				"app/views/index/human.html.erb"
+			],
+			[
+				"time_form",
+				"config/initializers/time_formats.rb"
+			],
+			[
+				"human-shared",
+				"app/assets/stylesheets/index/human-shared.sass"
+			],
+			[
+				"human.ss",
+				"app/assets/stylesheets/index/human-terms.sass"
+			],
+			[
+				"human_terms",
+				"app/views/index/human_terms.html.erb"
+			],
+			[
+				"last_con",
+				"app/assets/javascripts/application/app.utility.last_contact.js"
+			],
+			[
+				"last_conta",
+				"app/assets/javascripts/application/app.utility.last_contact.js"
+			],
+			[
+				"booking_reuest.yml",
+				"test/fixtures/booking_requests.yml"
+			],
+			[
+				"bookings.yml",
+				"test/fixtures/bookings.yml"
+			],
+			[
+				"booking_test.rb",
+				"test/unit/booking_test.rb"
+			],
+			[
+				"booking_request_test.rb",
+				"test/unit/booking_request_test.rb"
+			],
+			[
+				"booking_request.rb",
+				"app/models/booking_request.rb"
+			],
+			[
+				"booking_request",
+				"test/unit/booking_request_test.rb"
+			],
+			[
+				"users_help",
+				"app/helpers/users_helper.rb"
+			],
+			[
+				"time",
+				"config/initializers/time_formats.rb"
+			],
+			[
+				"layouts/human",
+				"app/views/layouts/human.html.erb"
+			],
+			[
+				"bookings/index.css",
+				"app/assets/stylesheets/bookings/index.css.sass"
+			],
+			[
+				"booking_modals.css",
+				"app/assets/stylesheets/shared/booking_modals.css.sass"
+			],
+			[
+				"user.rb",
+				"app/models/user.rb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/workingnotworking/workingnotworking/bookmarklets.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 97.0,
+		"last_filter": "assert_has",
+		"selected_items":
+		[
+			[
+				"assert_has",
+				"assert_has_many"
+			],
+			[
+				"data_url",
+				"data_url_for_message"
+			]
+		],
+		"width": 691.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 287.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

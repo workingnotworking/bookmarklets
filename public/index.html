@@ -51,8 +51,9 @@
       <p>To install just drag and drop the link to your bookmarks bar</p>
     </header>
     <article>
-      <h2>Covert Twitter usernames in Intercom to links</h2>
-      <a href="javascript:(function(){for(var els=document.getElementsByTagName('td'),i=0;i<els.length;i++)if(1==els[i].nodeType){var el=els[i];if(el.childNodes[2]){var n=el.childNodes[2];if(1==n.nodeType&&'custom_data.twitter'==n.getAttribute('data-lookup-key')){var h=n.innerHTML.trim();'Unknown'!=h&&(n.innerHTML='<a href=\'https://twitter.com/'+h+'\' target=\'_blank\'>'+h+'</a>')}}}}())">Intercom - Twitter Links</a>
+        <h2>Covert Instagram &amp; Twitter usernames in Intercom to links</h2>
+  <a href="javascript:!function(){for(var t=document.getElementsByTagName('td'),e=0;e<t.length;e++)if(1==t[e].nodeType){var a=t[e];if(a.childNodes[2]){var n=a.childNodes[2];if(1==n.nodeType)if('custom_data.twitter'==n.getAttribute('data-lookup-key')){var r=n.innerHTML.trim();'Unknown'!=r&&(n.innerHTML='<a href=\'https://twitter.com/'+r+'\' target=\'_blank\'>'+r+'</a>')}else if('custom_data.instagram'==n.getAttribute('data-lookup-key')){var r=n.innerHTML.trim();'Unknown'!=r&&(n.innerHTML='<a href=\'https://instagram.com/'+r+'\' target=\'_blank\'>'+r+'</a>')}}}}();">Intercom Links</a>
+
     </article>
   </body>
 </html>
